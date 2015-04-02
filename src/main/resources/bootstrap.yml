@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: zuulserver
+  # Once a config server is setup, use this
+  cloud:
+    config:
+      enabled: true
+      uri: http://user:varada@localhost:8888

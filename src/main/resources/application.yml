@@ -1,0 +1,23 @@
+info:
+  component: Zuul server application
+
+logging:
+  file: logs/zuul.log
+
+server:
+  port: 8080
+
+spring:
+  config:
+    name: zuulserver
+
+zuul:
+  routes:
+    apinetflix:
+      path: /apinetflix/**
+      url: http://localhost:9200
+
+# If you want to disable error page in browser
+#error:
+#  whitelabel:
+#    enabled: false
